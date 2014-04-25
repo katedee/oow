@@ -20,7 +20,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
  }
 
 body.original {
-	background-image: url('img/start.png');
+	background-image: url('img/start.jpg');
 }
 
  .container {
@@ -205,16 +205,16 @@ body.original {
 
 
  .clear {
- 	background-image: url(img/sunny.png);
+ 	background-image: url(img/sunny.jpg);
  	/*background-position: bottom left;*/
  }
 
  .clearnight {
- 	background-image: url(img/night.png);
+ 	background-image: url(img/night.jpg);
  }
 
  .dusty {
- 	background-image: url(img/dusty.png);
+ 	background-image: url(img/dusty.jpg);
  	/*background-position: bottom left;*/
  } 
  
@@ -224,72 +224,72 @@ body.original {
  } 
 
  .frozen {
- 	background-image: url(img/frozen.png);
+ 	background-image: url(img/frozen.jpg);
  	/*background-position: bottom left;*/
  }
 
 .glitch {
-	background-image: url(img/glitch2.png);
+	background-image: url(img/glitch2.jpg);
 }
 
  .hail {
- 	background-image: url(img/freezingrain.png);
+ 	background-image: url(img/freezingrain.jpg);
  	/*background-position: bottom left;*/
  }
 
  .hotdry {
- 	background-image: url(img/hotandsunny.png)
+ 	background-image: url(img/hotandsunny.jpg)
  }
 
  .kakariko {
- 	background-image: url(img/kakariko.png);
+ 	background-image: url(img/kakariko.jpg);
  }
 
  .nightovercast {
- 	background-image : url(img/nighttimeovercast.png);
+ 	background-image : url(img/nighttimeovercast.jpg);
  }
 
  .overcast {
- 	background-image: url(img/overcast.png);
+ 	background-image: url(img/overcast.jpg);
  	/*background-position: bottom left;*/
  } 
 
   .partlyCloudy {
- 	background-image: url(img/partlycloudy.png);
+ 	background-image: url(img/partlycloudy.jpg);
  	/*background-position: bottom left;*/
  } 
 
  .rain {
- 	background-image: url(img/rainy.png);
+ 	background-image: url(img/rainy.jpg);
  	/*background-position: bottom left;*/
  }  
 
  .snowy {
- 	background-image: url(img/snow.png);
+ 	background-image: url(img/snow.jpg);
  	/*background-position: bottom left;*/
  }
 
 .squall {
- 	background-image: url(img/flooding.png);
+ 	background-image: url(img/flooding.jpg);
  	/*background-position: bottom left;*/
  } 
 
  .thunderstorm {
- 	background-image: url(img/storm.png);
+ 	background-image: url(img/storm.jpg);
  	/*background-position: bottom left;*/
  } 
 
  .stormnight {
- 	background: url(img/nightstorm.png);
+ 	background: url(img/nightstorm.jpg);
  }
 
  .unknown {
- 	background-image: url(img/unknown.png);
+ 	background-image: url(img/unknown.jpg);
  	/*background-position: bottom left;*/
  } 
 
  .volcano {
- 	background-image: url(img/volcano.png);
+ 	background-image: url(img/volcano.jpg);
  	/*background-position: top left;*/
  } 
 
