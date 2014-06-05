@@ -57,28 +57,65 @@ body.original {
 }
 
 /* RETURN */
-.return a {
+.returnContainer {
 	border: none;
+	margin: 0 3% 0% 0%;
+	position: relative;
 	font-size: 20px;
-	position: absolute;
-	top: 20px;
-	right: 30px;
-	padding: 19px 0 0 0px;
-	text-decoration: none;
-	width: 60px;
-	height: 60px;
+	float: right;
 	text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-	border-radius: 50%;
-	padding: 10px 10px;
-	background: #2f2a84; /* Old browsers */
-	background: -moz-linear-gradient(top,  #2f2a84 17%, #6c67e8 89%, #aaaaed 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(17%,#2f2a84), color-stop(89%,#6c67e8), color-stop(100%,#aaaaed)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #2f2a84 17%,#6c67e8 89%,#aaaaed 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #2f2a84 17%,#6c67e8 89%,#aaaaed 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #2f2a84 17%,#6c67e8 89%,#aaaaed 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #2f2a84 17%,#6c67e8 89%,#aaaaed 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f2a84', endColorstr='#aaaaed',GradientType=0 ); /* IE6-9 */
+	-webkit-perspective:1000;
+  	-moz-perspective:1000;
+  	perspective:1000;
+}
 
+.flipper {
+	transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 100% 32.5px;
+}
+
+	/* flip the pane when hovered */
+	.returnContainer:hover .flipper, .returnContainer.hover .flipper {
+			-webkit-transform: rotateX(180deg);
+		}
+
+.returnContainer, .return, .returnBack {
+	width: 65px;
+	height: 65px;
+}
+
+
+/* hide back of pane during swap */
+.return, .returnBack {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.return {
+	z-index: 2;
+	background: url('img/return.png') no-repeat;
+	background-size: 65px auto;
+}
+
+/* back, initially hidden pane */
+.returnBack {
+	-webkit-transform: rotateX(-180deg);
+	  background: url('img/return.png') no-repeat;
+	  background-size: 65px auto;
+}
+
+
+.return a {
+	text-decoration: none;
+	color: white;
+	position: absolute;
+	top: 18px;
+	right: -5px;
+	font-weight: bold;
 }
 
 /*animation*/
