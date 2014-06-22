@@ -132,6 +132,9 @@
 				}//success
 			});//ajax 
 		}//findWeather
+
+	var heartCount = 3;
+
 	$('form.hyrule').on('submit',function(e){
 		e.preventDefault();
 		var temple = $('input[name="city"]').val().toLowerCase();
@@ -141,6 +144,18 @@
 			$('body').addClass('kakariko');
 			$('h1').text('Cuccos!');
 			spawnCuccos();
+			heartCount -= 1;
+			console.log(heartCount);
+			if (heartCount===2){
+				$('.heart3').addClass('dying');
+			}
+			if (heartCount===1){
+				$('.heart2').addClass('dying');
+			}
+			if (heartCount===0){
+				$('.heart1').addClass('dying');
+				alert("game over!");
+			}
 		}
 		else {
 			findWeather(temple);

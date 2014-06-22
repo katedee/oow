@@ -341,6 +341,10 @@ body.original {
     position: relative;
     display:inline-block;
     width: 30px;
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
 }
 .heart:before,
 .heart:after {
@@ -379,6 +383,10 @@ body.original {
         -ms-transform-origin: 100% 100%;
          -o-transform-origin: 100% 100%;
             transform-origin :100% 100%;
+}
+
+.dying {
+	opacity: 0;
 }
 
 
